@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
         <script src="lib/leaflet/leaflet.js"></script>
         <script src="data/reg_2.geojson" ></script>
-        <script src="data/cnap_20.geojson" ></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="lib/filter/custom.css">
@@ -129,7 +128,8 @@
             
             
             // POINTS SECTION
-            // define point styles for zoom 5
+            // STYLES
+            // ZOOM 5
             function pointStyle(feature){
                 return {
                     radius: 2,
@@ -183,88 +183,8 @@
                     fillOpacity: 0.7   
                 }
             };
-
-
-            //add point layers
-            var rest_5 = L.geoJson(cnap_20,{
-                style: pointStyle,
-                filter: function(feature, layer){
-                    return feature.properties.donor == null;
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-            cnap_20Layer = L.geoJson(cnap_20, {
-                
-                function (feature) {
-                    return feature.properties && feature.properties.style
-                },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-            });
-            cnap_20Layer.bringToFront();
             
-            var egap_5 = L.geoJson(cnap_20,{
-                style: pointStyle_EGAP_5,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "EGAP Program";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-                        
-            var ulead_5 = L.geoJson(cnap_20,{
-                style: pointStyle_ULEAD_5,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "U-LEAD";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-                        
-            var giz_5 = L.geoJson(cnap_20,{
-                style: pointStyle_GIZ_5,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "GIZ";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-
-            var euproject_5 = L.geoJson(cnap_20,{
-                style: pointStyle_eu_5,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "EU Project";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });                      
-
-
             // ZOOOM 6
-            // define point styles for zoom 6
             function pointStyle_6(feature){
                 return {
                     radius: 3.5,
@@ -318,73 +238,8 @@
                     fillOpacity: 0.6   
                 }
             };
-            
-            // add layers for zoom 6
-            var rest_6 = L.geoJson(cnap_20,{
-                style: pointStyle_6,
-                filter: function(feature, layer){
-                    return feature.properties.donor == null;
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
 
-            var egap_6 = L.geoJson(cnap_20,{
-                style: pointStyle_EGAP_6,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "EGAP Program";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-                        
-            var ulead_6 = L.geoJson(cnap_20,{
-                style: pointStyle_ULEAD_6,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "U-LEAD";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-                        
-            var giz_6 = L.geoJson(cnap_20,{
-                style: pointStyle_GIZ_6,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "GIZ";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-
-            var euproject_6 = L.geoJson(cnap_20,{
-                style: pointStyle_eu_6,
-                filter: function(feature, layer){
-                    return feature.properties.donor == "EU Project";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    var circle =  L.circleMarker(latlng,pointStyle);
-                    return circle;
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-            // ICONS
-            // STYLE FOR ZOOM 7
+            // ZOOM 7
             var egap_7_style = L.icon({
                 iconUrl: 'data/egap_7.svg',
                 iconSize: [16, 16],
@@ -415,60 +270,7 @@
                 iconAnchor: [8,8]
             });                                    
 
-            // markers with custom icons
-            var rest_7 = L.geoJson(cnap_20,{
-                filter: function(feature, layer){
-                    return feature.properties.donor == null;
-                    },
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng, {icon: rest_7_style});
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-            var egap_7 = L.geoJson(cnap_20,{
-                filter: function(feature, layer){
-                    return feature.properties.donor == "EGAP Program";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng, {icon: egap_7_style});
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-                        
-            var ulead_7 = L.geoJson(cnap_20,{
-                filter: function(feature, layer){
-                    return feature.properties.donor == "U-LEAD";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng, {icon: ulead_7_style});
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-                        
-            var giz_7 = L.geoJson(cnap_20,{
-                filter: function(feature, layer){
-                    return feature.properties.donor == "GIZ";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng, {icon: giz_7_style});
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-            var euproject_7 = L.geoJson(cnap_20,{
-                filter: function(feature, layer){
-                    return feature.properties.donor == "EU Project";
-                    },
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng, {icon: euproject_7_style});
-                },
-                onEachFeature: onEachFeaturePointsPopup,
-                    });
-
-            // STYLE FOR ZOOM 8
+            // ZOOM 8
             var egap_8_style = L.icon({
                 iconUrl: 'data/egap_8.svg',
                 iconSize: [24, 24],
@@ -497,10 +299,183 @@
                 iconUrl: 'data/rest_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
-            }); 
+            });
 
-            // markers with custom icons
-            var rest_8 = L.geoJson(cnap_20,{
+            // GEOJSON LAYER WITH JQUERY
+            $.getJSON("data/cnap_20.geojson", function(response){
+                console.log("response", response);
+
+                var rest_5 = new L.geoJson(response,{
+                style: pointStyle,
+                filter: function(feature, layer){
+                    return feature.properties.donor == null;
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var egap_5 = new L.geoJson(response,{
+                style: pointStyle_EGAP_5,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EGAP Program";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var ulead_5 = new L.geoJson(response,{
+                style: pointStyle_ULEAD_5,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var giz_5 = new L.geoJson(response,{
+                style: pointStyle_GIZ_5,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "GIZ";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var euproject_5 = new L.geoJson(response,{
+                style: pointStyle_eu_5,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EU Project";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var rest_6 = new L.geoJson(response,{
+                style: pointStyle_6,
+                filter: function(feature, layer){
+                    return feature.properties.donor == null;
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var egap_6 = new L.geoJSON(response,{
+                style: pointStyle_EGAP_6,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EGAP Program";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                        
+                var ulead_6 = new L.geoJSON(response,{
+                style: pointStyle_ULEAD_6,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                
+                var giz_6 = new L.geoJSON(response,{
+                style: pointStyle_GIZ_6,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "GIZ";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var euproject_6 = new L.geoJSON(response,{
+                style: pointStyle_eu_6,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EU Project";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var rest_7 = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == null;
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: rest_7_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var egap_7 = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EGAP Program";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: egap_7_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                        
+                var ulead_7 = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: ulead_7_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                        
+                var giz_7 = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "GIZ";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: giz_7_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var euproject_7 = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EU Project";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: euproject_7_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                
+                var rest_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == null;
                     },
@@ -510,7 +485,7 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
-            var egap_8 = L.geoJson(cnap_20,{
+                var egap_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == "EGAP Program";
                     },
@@ -520,7 +495,7 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
-            var ulead_8 = L.geoJson(cnap_20,{
+                var ulead_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == "U-LEAD";
                     },
@@ -530,8 +505,7 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
-                        
-            var giz_8 = L.geoJson(cnap_20,{
+                var giz_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == "GIZ";
                     },
@@ -541,7 +515,7 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
-            var euproject_8 = L.geoJson(cnap_20,{
+                var euproject_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == "EU Project";
                     },
@@ -551,38 +525,7 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
-            // DEFINE THE LOAD MAP LAYERS GROUP
-            var lz6 = L.layerGroup([rest_6, euproject_6, egap_6, giz_6,ulead_6]);
-
-            $("input").click(function( event ) {
-                layerClicked = window[event.target.value];
-                
-                    if (map.hasLayer(layerClicked)) {
-                        map.removeLayer(layerClicked);
-                    }
-                    else{
-                        map.addLayer(layerClicked);
-                    };
-                });
-
-            new L.Control.GPlaceAutocomplete({
-            callback: function(location){
-                map.panTo([
-                    location.geometry.location.lat(),
-                    location.geometry.location.lng()
-                ]);
-                map.fitBounds([
-                    [location.geometry.viewport.getSouthWest().lat(),
-                    location.geometry.viewport.getSouthWest().lng()],
-                    [location.geometry.viewport.getNorthEast().lat(),
-                    location.geometry.viewport.getNorthEast().lng()]
-                ]);
-            }}).addTo(map);
-
-            map.on('load', function(e) {
-                map.addLayer(lz6);
-            });
-            map.on('zoomend ', function(e) {
+                map.on('zoomend ', function(e) {
                 if ( map.getZoom() <= 5 && map.getZoom() < 6){ 
                     if (map.hasLayer(rest)) {
                         map.removeLayer(rest);
@@ -774,8 +717,42 @@
                         map.removeLayer(euproject);
                         euproject = euproject_8;
                     };                    
-                }                
-            });
+                }              
+                });
+                // DEFINE THE LOAD MAP LAYERS GROUP
+                $("input").click(function( event ) {
+                    layerClicked = window[event.target.value];
+                
+                    if (map.hasLayer(layerClicked)) {
+                        map.removeLayer(layerClicked);
+                    }
+                    else{
+                        map.addLayer(layerClicked);
+                    };
+                });
+
+                rest = rest_6;
+                euproject = euproject_6;
+                egap = egap_6;
+                giz = giz_6;
+                ulead = ulead_6;
+                lz6 = L.layerGroup([rest, euproject, egap, giz, ulead]);
+                map.addLayer(lz6);
+                }); 
+
+            new L.Control.GPlaceAutocomplete({
+            callback: function(location){
+                map.panTo([
+                    location.geometry.location.lat(),
+                    location.geometry.location.lng()
+                ]);
+                map.fitBounds([
+                    [location.geometry.viewport.getSouthWest().lat(),
+                    location.geometry.viewport.getSouthWest().lng()],
+                    [location.geometry.viewport.getNorthEast().lat(),
+                    location.geometry.viewport.getNorthEast().lng()]
+                ]);
+            }}).addTo(map);
             map.setView([49.03, 31.50],6);
             map.setMaxBounds(bounds);
             map.setMinZoom(5);
