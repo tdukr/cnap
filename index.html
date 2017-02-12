@@ -95,7 +95,7 @@
             function onEachFeaturePointsPopup(feature, layer){
                 layer.on({
                     click: function information(){
-                        document.getElementById('textinfo').innerHTML = '<font size="+0.3">'+feature.properties.name+'</font>'+'<br>'+'<br>'+'<font size="-1">Графік роботи:<br>'+feature.properties.schedule+'</font><br>'+'<br>'+'<a target="_blank" href="'+feature.properties.url+'">Офіційний сайт</a>'+'<br><br><font size="-1.9">Кількість адміністраторів: '+feature.properties.workers_nu+'<br>Кількість видів послуг: '+feature.properties.num_servic+'<br>Послуг, наданих адміністратором за день: '+feature.properties.serv_adm+'<br><br>'+feature.properties.field_8+'</font>'
+                        document.getElementById('textinfo').innerHTML = '<font size="+0.3">'+feature.properties.name+'</font>'+'<br>'+'<br>'+'<font size="-1">Графік роботи:<br>'+feature.properties.schedule+'</font><br>'+'<br>'+'<a target="_blank" href="'+feature.properties.url+'">Офіційний сайт</a>'+'<br><br><font size="-1.9">Кількість адміністраторів: '+feature.properties.work_num+'<br>Кількість видів послуг: '+feature.properties.num_serv+'<br>Послуг, наданих адміністратором за день: '+feature.properties.serv_adm+'<br><br>'+feature.properties.serv_text+'</font>'
                     }
                 })
             };
