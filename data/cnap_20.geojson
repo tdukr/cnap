@@ -1,6 +1,5 @@
-﻿{
+{
 "type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "name": "Центр адміністративних послуг \"\"Прозорий офіс\"\" (Центральне відділення) виконавчого комітету Вінницької міської ради", "donor": "EGAP Program", "url": "http:\/\/www.vmr.gov.ua\/TransparentCity\/Lists\/TransparentOffice\/ShowContent.aspx?ID=20", "schedule": "понеділок-четвер з 09:00год. до 17:00 год., пятниця з 09:00год. до 16:00 год., вихідні - субота, неділя.", "work_num": 11, "num_serv": 207, "serv_adm": 100, "serv_text": "Банківські послуги<br>Канцелярські послуги<br>Електронний документообіг<br>Електронна черга<br>Адмінпослуги онлайн<br>Дитяча кімната<br>" }, "geometry": { "type": "Point", "coordinates": [ 28.468483, 49.232106 ] } },
 { "type": "Feature", "properties": { "name": "Центр адміністративних послуг \"\"Прозорий офіс\"\" (відділення \"\"Вишенька\"\") виконавчого комітету Вінницької міської ради", "donor": "EGAP Program", "url": "http:\/\/www.vmr.gov.ua\/TransparentCity\/Lists\/TransparentOffice\/ShowContent.aspx?ID=21", "schedule": "понеділок-четвер з 09:00год. до 17:00 год., пятниця з 09:00год. до 16:00 год., вихідні - субота, неділя.", "work_num": 4, "num_serv": 237, "serv_adm": 100, "serv_text": "Банківські послуги<br>Канцелярські послуги<br>Електронний документообіг<br>Електронна черга<br>Адмінпослуги онлайн<br>Дитяча кімната<br>" }, "geometry": { "type": "Point", "coordinates": [ 28.419237, 49.226899 ] } },
