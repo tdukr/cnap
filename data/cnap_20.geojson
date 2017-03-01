@@ -1,4 +1,4 @@
-{
+﻿{
   "type": "FeatureCollection",
   "features": [
     {
@@ -305,7 +305,7 @@
       "type": "Feature",
       "properties": {
         "name": "Центр надання адміністративних послуг при Калинівській районній державній адміністрації",
-        "donor": "U-LEAD",
+        "donor": "U-LEAD_pr",
         "url": "http://kalynivka-rda.gov.ua/?link=admin_poslugy",
         "schedule": "понеділок-п'ятниця з 08:00 год. до 15:00год., вихідні-субота, неділя",
         "work_num": 2,
@@ -3425,7 +3425,7 @@
       "type": "Feature",
       "properties": {
         "name": "Центр надання  адміністративних послуг Тячівської районної державної адміністрації",
-        "donor": "U-LEAD",
+        "donor": "U-LEAD_pr",
         "url": "http://tyachiv-rda.gov.ua/index.php/adminposlugi/2013-05-21-00-01-30.html",
         "schedule": "понеділок - п'ятница  -   з 8.00 до 17.00",
         "work_num": 7,
@@ -6684,8 +6684,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Центр надання адміністративних послуг Новострілищанська селищна рада Новострілищанської ОТГ Жидачівського району",
-        "donor": "U-LEAD",
+        "name": "Центр надання адміністративних послуг Новострілищанської ОТГ",
+        "donor": "U-LEAD_pr",
         "url": "http://ns.lviv.ua/331-novostrilyshchanska-oth-pidpysala-memorandum-pro-spivpratsiu-iz-mizhnarodnoiu-kompaniieiu-shchodo-stvorennia-tsnapu.html",
         "schedule": "Пн.09:00 – 16:00 Вт08:00 – 20:00 Ср08:00 – 17:00 Чт12:00 – 20:00  Пт08:00 – 17:00 Сб 08:00 – 16:00",
         "work_num": 1,
@@ -11845,7 +11845,7 @@
       "type": "Feature",
       "properties": {
         "name": "Центр надання адміністративних послуг Новоушицької районної державної адміністрації",
-        "donor": "U-LEAD",
+        "donor": "U-LEAD_pr",
         "url": "http://cnap-nu.at.ua/",
         "schedule": "понеділок, середа:       08.00-17.15, вівторок, червер:      08.00-20.00,      субота:      08.00-15.00",
         "work_num": 4,
@@ -12585,7 +12585,7 @@
       "type": "Feature",
       "properties": {
         "name": "Центр надання адміністративних послуг Виконавчого комітету Єрківської селищної ради",
-        "donor": "U-LEAD",
+        "donor": "U-LEAD_pr",
         "url": "http://erkivska.gromada.org.ua/perelik-poslug-scho-nadajutsya-viddilami-vikonavchogo-komitetu-15-49-11-31-05-2016/",
         "schedule": "понеділок, середа, четвер, п’ятниця: 08.00-17.00, вівторок: 08.00-20.00, субота, неділля - вихідний",
         "work_num": 2,
