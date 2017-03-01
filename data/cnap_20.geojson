@@ -13365,7 +13365,7 @@
       "type": "Feature",
       "properties": {
         "name": "Центр надання  адміністративних послуг об'єднаної територіальної громади с. Кіпті  ( с. Підлісне, с. Прогрес, с. Вовчок, с. Новий Шлях, с.Олбин)",
-        "donor": "U-LEAD",
+        "donor": "U-LEAD_pr",
         "url": "http://kiptivska.gromada.org.ua/centr-nadannya-administrativnih-poslug-15-39-40-14-12-2016/",
         "schedule": "Пн.- пт. з 8-00 до 17-00, обідня перерва з 13-00 до 14-00, вихідні - субота, неділя",
         "work_num": 6,
@@ -13625,6 +13625,126 @@
         "coordinates": [
           28.363062143325806,
           49.255257474803116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Червоненської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/739#tab4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.8680362701416,
+          49.95039149862272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Старобогородчанської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/744"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.527664184570312,
+          48.83624942367305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Гостомельської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/news/item/id/4058"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.258579254150387,
+          50.588686175404796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Золотниківської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/788"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.37567138671875,
+          49.29199347427707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Скалатської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/773"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.97614288330078,
+          49.425657952862814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Меджибізької ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/587"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.405223846435547,
+          49.43710119614862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Полонської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/594"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.491741180419922,
+          50.12255922375676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Кочубеївської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/768"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.21184158325195,
+          47.49725613247584
         ]
       }
     }
