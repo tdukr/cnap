@@ -13633,7 +13633,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Червоненської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/739#tab4"
+        "url": "http://decentralization.gov.ua/region/common/id/739#tab4",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13648,7 +13653,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Старобогородчанської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/744"
+        "url": "http://decentralization.gov.ua/region/common/id/744",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13663,7 +13673,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Гостомельської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/news/item/id/4058"
+        "url": "http://decentralization.gov.ua/news/item/id/4058",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13678,7 +13693,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Золотниківської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/788"
+        "url": "http://decentralization.gov.ua/region/common/id/788",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13693,7 +13713,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Скалатської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/773"
+        "url": "http://decentralization.gov.ua/region/common/id/773",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13708,7 +13733,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Меджибізької ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/587"
+        "url": "http://decentralization.gov.ua/region/common/id/587",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": ""
       },
       "geometry": {
         "type": "Point",
@@ -13723,7 +13753,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Полонської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/594"
+        "url": "http://decentralization.gov.ua/region/common/id/594",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13738,7 +13773,12 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Кочубеївської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/768"
+        "url": "http://decentralization.gov.ua/region/common/id/768",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
