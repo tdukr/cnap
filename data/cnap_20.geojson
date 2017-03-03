@@ -5464,10 +5464,13 @@
     {
       "type": "Feature",
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
         "name": "Центр надання адміністративних послуг Маловисківської районної державної адміінстрації",
-        "donor": "U-LEAD",
+        "donor": "null",
         "url": "http://mv.kr-admin.gov.ua/2012-03-04-23-03-22/2014-03-24-13-09-15.html",
-        "schedule": "понеділок- четвер:\n08:00- 16:00,\nп'ятниця: 08:00 - 20:00\n",
+        "schedule": "понеділок- четвер:08:00- 16:00,п'ятниця: 08:00 - 20:00",
         "work_num": 2,
         "num_serv": 104,
         "serv_adm": 4,
@@ -11864,8 +11867,11 @@
     {
       "type": "Feature",
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
         "name": "Центр надання адміністративних послуг Полонської районної державної адміністрації",
-        "donor": "U-LEAD",
+        "donor": "null",
         "url": "http://poladm.gov.ua/index.php?option=com_content&view=category&layout=blog&id=71&Itemid=64",
         "schedule": "понеділок, середа: 08.00-17.00, вівторок, четвер: 08.00-20.00, п'ятниця, субота: 08.00-16.00",
         "work_num": 4,
