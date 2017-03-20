@@ -19,6 +19,7 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA85rH-shSVGTftaXcECnFRT3LKfbpVg3w&libraries=places"></script>
     </head>
     <body>
+            <div id="legend_pr">* Білий фон відображає об'єкти на стадії створення</div>
             <div id="map"></div>
             <div id="infopanel">
                 <div id="mapname">Мережа Центрів надання адміністративних послуг в Україні</div>
@@ -162,6 +163,17 @@
                 }
             };
             
+            function pointStyle_ULEAD_5_pr(feature){
+                return {
+                    radius: 2,
+                    fillColor: "white",
+                    color: "blue",
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };            
+            
             function pointStyle_GIZ_5(feature){
                 return {
                     radius: 2,
@@ -217,6 +229,17 @@
                 }
             };
             
+            function pointStyle_ULEAD_6_pr(feature){
+                return {
+                    radius: 3.5,
+                    fillColor: "white",
+                    color: "#00007f",
+                    weight: 1.4,
+                    opacity: 0.6,
+                    fillOpacity: 0.6   
+                }
+            };
+
             function pointStyle_GIZ_6(feature){
                 return {
                     radius: 3.5,
@@ -252,6 +275,12 @@
                 iconAnchor: [8,8]
             });
 
+            var ulead_7_pr_style = L.icon({
+                iconUrl: 'data/ulead_pr_7.svg',
+                iconSize: [16, 16],
+                iconAnchor: [8,8]
+            });
+
             var giz_7_style = L.icon({
                 iconUrl: 'data/giz_7.svg',
                 iconSize: [16, 16],
@@ -279,6 +308,12 @@
 
             var ulead_8_style = L.icon({
                 iconUrl: 'data/ulead_8.svg',
+                iconSize: [24, 24],
+                iconAnchor: [12,12]
+            });
+
+            var ulead_8_pr_style = L.icon({
+                iconUrl: 'data/ulead_pr_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });
@@ -333,6 +368,18 @@
                 style: pointStyle_ULEAD_5,
                 filter: function(feature, layer){
                     return feature.properties.donor == "U-LEAD";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var ulead_5_pr = new L.geoJson(response,{
+                style: pointStyle_ULEAD_5_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD_pr";
                     },
                 pointToLayer: function (feature, latlng) {
                     var circle =  L.circleMarker(latlng,pointStyle);
@@ -401,6 +448,18 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
                 
+                var ulead_6_pr = new L.geoJSON(response,{
+                style: pointStyle_ULEAD_6_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
                 var giz_6 = new L.geoJSON(response,{
                 style: pointStyle_GIZ_6,
                 filter: function(feature, layer){
@@ -454,6 +513,16 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var ulead_7_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: ulead_7_pr_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
                         
                 var giz_7 = new L.geoJSON(response,{
                 filter: function(feature, layer){
@@ -505,6 +574,16 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
+                var ulead_8_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: ulead_8_pr_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
+
                 var giz_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == "GIZ";
@@ -547,12 +626,12 @@
                     };           
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
-                        ulead = ulead_5;
+                        ulead = L.layerGroup([ulead_5, ulead_5_pr]);
                         map.addLayer(ulead);
                     }
                     else {
                         map.removeLayer(ulead);
-                        ulead = ulead_5;
+                        ulead = L.layerGroup([ulead_5, ulead_5_pr]);
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
@@ -595,12 +674,12 @@
                     };                    
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
-                        ulead = ulead_6;
+                        ulead = L.layerGroup([ulead_6, ulead_6_pr])
                         map.addLayer(ulead);
                     }
                     else {
                         map.removeLayer(ulead);
-                        ulead = ulead_6;
+                        ulead = L.layerGroup([ulead_6, ulead_6_pr])
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
@@ -644,12 +723,12 @@
                     };                    
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
-                        ulead = ulead_7;
+                        ulead = L.layerGroup([ulead_7, ulead_7_pr]);
                         map.addLayer(ulead);
                     }
                     else {
                         map.removeLayer(ulead);
-                        ulead = ulead_7;
+                        ulead = L.layerGroup([ulead_7, ulead_7_pr]);
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
@@ -692,12 +771,12 @@
                     };                    
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
-                        ulead = ulead_8;
+                        ulead = L.layerGroup([ulead_8, ulead_8_pr]);
                         map.addLayer(ulead);
                     }
                     else {
                         map.removeLayer(ulead);
-                        ulead = ulead_8;
+                        ulead = L.layerGroup([ulead_8, ulead_8_pr]);
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
@@ -735,7 +814,7 @@
                 euproject = euproject_6;
                 egap = egap_6;
                 giz = giz_6;
-                ulead = ulead_6;
+                ulead = L.layerGroup([ulead_6, ulead_6_pr]);
                 lz6 = L.layerGroup([rest, euproject, egap, giz, ulead]);
                 map.addLayer(lz6);
                 }); 

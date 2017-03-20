@@ -104,6 +104,18 @@ a {
     background-color: #45484d;
 }
 
+#legend_pr{
+  position: absolute;
+  width: 300px;
+  left: 10px;
+  bottom: 10px;
+  font: 12px Arial, sans-serif;
+  color: white;
+  display: block;
+  opacity: 0.9;
+  z-index: 314159;
+}
+
 input[type=checkbox] {
     visibility: hidden;
 }
