@@ -13808,7 +13808,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Іршанської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/710http://irshansk-rada.com.ua/"
+        "url": "http://decentralization.gov.ua/region/common/id/710http://irshansk-rada.com.ua/",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13823,7 +13827,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Краснопільської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/99#tab1"
+        "url": "http://decentralization.gov.ua/region/common/id/99#tab1",
+        "serv_adm": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "work_num": "дані відсутні",
+        "schedule": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13838,7 +13846,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Миколаївської селищної ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/1297"
+        "url": "http://decentralization.gov.ua/region/common/id/1297",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13853,7 +13865,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Старосинявської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/602"
+        "url": "http://decentralization.gov.ua/region/common/id/602",
+        "serv_adm": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "work_num": "дані відсутні",
+        "schedule": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13868,7 +13884,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Чемеровецької ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/607"
+        "url": "http://decentralization.gov.ua/region/common/id/607",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13883,7 +13903,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Глобинської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/626"
+        "url": "http://decentralization.gov.ua/region/common/id/626",
+        "serv_adm": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "work_num": "дані відсутні",
+        "schedule": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13898,7 +13922,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Калитянської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/747"
+        "url": "http://decentralization.gov.ua/region/common/id/747",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13913,7 +13941,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Северинівської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/277"
+        "url": "http://decentralization.gov.ua/region/common/id/277",
+        "serv_adm": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "work_num": "дані відсутні",
+        "schedule": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
@@ -13928,7 +13960,11 @@
       "properties": {
         "name": "Центр надання адміністративних послуг Веселівської ОТГ",
         "donor": "U-LEAD_pr",
-        "url": "http://decentralization.gov.ua/region/common/id/421"
+        "url": "http://decentralization.gov.ua/region/common/id/421",
+        "schedule": "дані відсутні",
+        "work_num": "дані відсутні",
+        "num_serv": "дані відсутні",
+        "serv_adm": "дані відсутні"
       },
       "geometry": {
         "type": "Point",
