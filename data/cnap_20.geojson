@@ -11587,8 +11587,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Центр надання адміністративних послуг виконавчого комітету Славутської міської ради",
-        "donor": null,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Мобільне робоче місце адміністратора Славутської ОТГ",
+        "donor": "U-LEAD_pr",
         "url": "http://www.slavuta-mvk.info/index.php?page=syte/text/cnap/main.php",
         "schedule": "понеділок, вівторок, четвер: 08.00-17.15, середа: 08.00-20.00, п'ятниця: 08.00-16.00",
         "work_num": 4,
@@ -11599,8 +11602,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          26.865843,
-          50.295066
+          26.872751712799072,
+          50.29907888596951
         ]
       }
     },
@@ -12570,8 +12573,11 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Центр надання адміністративних послуг Виконавчого комітету Білозірської сільської ради",
-        "donor": null,
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Віддалене робоче місце адміністратора Білозірської ОТГ",
+        "donor": "U-LEAD_pr",
         "url": "http://bilozirska.gromada.org.ua/cnap-09-00-26-26-10-2016/",
         "schedule": "понеділок, середа, четвер, п’ятниця: 08.00-17.00, вівторок: 08.00-20.00, субота, неділля - вихідний",
         "work_num": 3,
@@ -12610,8 +12616,11 @@
     {
       "type": "Feature",
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
         "name": "Центр надання адміністративних послуг Виконавчого комітету Мокрокалигірської сільської ради",
-        "donor": null,
+        "donor": "U-LEAD_pr",
         "url": "http://mkalygirska.gromada.org.ua/cnap-11-57-40-28-09-2016/",
         "schedule": "понеділок, середа, четвер, п’ятниця: 08.00-17.00, вівторок: 08.00-20.00, субота, неділля - вихідний",
         "work_num": 1,
@@ -13896,6 +13905,36 @@
         "coordinates": [
           31.023008823394772,
           50.74769489073832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Северинівської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/277"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.94471263885498,
+          49.048248155463575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Веселівської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/421"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.91961479187011,
+          47.01350296547318
         ]
       }
     }
