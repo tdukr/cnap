@@ -13793,6 +13793,51 @@
           47.49725613247584
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Іршанської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/710http://irshansk-rada.com.ua/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.723089694976803,
+          50.75201558814041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Краснопільської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/99#tab1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2556848526001,
+          50.771221402117824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Миколаївської селищної ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/1297"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.663710594177246,
+          51.056205415884534
+        ]
+      }
     }
   ]
 }
