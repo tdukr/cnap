@@ -13812,7 +13812,8 @@
         "schedule": "дані відсутні",
         "work_num": "дані відсутні",
         "num_serv": "дані відсутні",
-        "serv_adm": "дані відсутні"
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13831,7 +13832,8 @@
         "serv_adm": "дані відсутні",
         "num_serv": "дані відсутні",
         "work_num": "дані відсутні",
-        "schedule": "дані відсутні"
+        "schedule": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13850,7 +13852,8 @@
         "schedule": "дані відсутні",
         "work_num": "дані відсутні",
         "num_serv": "дані відсутні",
-        "serv_adm": "дані відсутні"
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13869,7 +13872,8 @@
         "serv_adm": "дані відсутні",
         "num_serv": "дані відсутні",
         "work_num": "дані відсутні",
-        "schedule": "дані відсутні"
+        "schedule": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13888,7 +13892,8 @@
         "schedule": "дані відсутні",
         "work_num": "дані відсутні",
         "num_serv": "дані відсутні",
-        "serv_adm": "дані відсутні"
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13907,7 +13912,8 @@
         "serv_adm": "дані відсутні",
         "num_serv": "дані відсутні",
         "work_num": "дані відсутні",
-        "schedule": "дані відсутні"
+        "schedule": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13926,7 +13932,8 @@
         "schedule": "дані відсутні",
         "work_num": "дані відсутні",
         "num_serv": "дані відсутні",
-        "serv_adm": "дані відсутні"
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13945,7 +13952,8 @@
         "serv_adm": "дані відсутні",
         "num_serv": "дані відсутні",
         "work_num": "дані відсутні",
-        "schedule": "дані відсутні"
+        "schedule": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
@@ -13964,7 +13972,8 @@
         "schedule": "дані відсутні",
         "work_num": "дані відсутні",
         "num_serv": "дані відсутні",
-        "serv_adm": "дані відсутні"
+        "serv_adm": "дані відсутні",
+        "serv_text": " "
       },
       "geometry": {
         "type": "Point",
