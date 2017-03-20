@@ -13838,6 +13838,66 @@
           51.056205415884534
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Старосинявської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/602"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.614854574203488,
+          49.59721067431233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Чемеровецької ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/607"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.340043544769287,
+          49.009114146577176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Глобинської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/626"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.29549700021744,
+          49.36988805415426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Центр надання адміністративних послуг Калитянської ОТГ",
+        "donor": "U-LEAD_pr",
+        "url": "http://decentralization.gov.ua/region/common/id/747"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.023008823394772,
+          50.74769489073832
+        ]
+      }
     }
   ]
 }
