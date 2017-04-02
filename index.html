@@ -9,7 +9,7 @@
         <!-- Leaflet -->
         <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
         <script src="lib/leaflet/leaflet.js"></script>
-        <script src="data/reg_2.geojson" ></script>
+        <script src="data/reg_3.geojson" ></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="lib/filter/custom.css">
@@ -19,7 +19,7 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA85rH-shSVGTftaXcECnFRT3LKfbpVg3w&libraries=places"></script>
     </head>
     <body>
-            <div id="legend_pr">* Білий фон відображає об'єкти на стадії створення</div>
+            <div id="legend_pr">* Світлий фон відображає об'єкти на етапі створення</div>
             <div id="map"></div>
             <div id="infopanel">
                 <div id="mapname">Мережа Центрів надання адміністративних послуг в Україні</div>
@@ -122,7 +122,7 @@
                 }
             };
 
-            regionLayer = L.geoJson(reg_2, {
+            regionLayer = L.geoJson(reg_3, {
                 style: regStyle,
                 onEachFeature : onEachFeatureReg
             }).addTo(map);
@@ -130,6 +130,62 @@
             
             // POINTS SECTION
             // STYLES
+            // permanent style
+
+            function pointStyle_perm(feature){
+                return {
+                    radius: 1,
+                    fillColor: "green",
+                    color: "green",
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7
+                }
+            };
+
+            function pointStyle_EGAP_perm(feature){
+                return {
+                    radius: 1,
+                    fillColor: "red",
+                    color: "red",
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };
+
+            function pointStyle_ULEAD_perm(feature){
+                return {
+                    radius: 1,
+                    fillColor: "blue",
+                    color: "blue",
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };
+
+            function pointStyle_GIZ_perm(feature){
+                return {
+                    radius: 1,
+                    fillColor: "orange",
+                    color: "orange",
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };
+
+            function pointStyle_eu_perm(feature){
+                return {
+                    radius: 1,
+                    fillColor: '#fbff01',
+                    color: '#fbff01',
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };            
             // ZOOM 5
             function pointStyle(feature){
                 return {
@@ -141,6 +197,7 @@
                     fillOpacity: 0.7
                 }
             };
+
             function pointStyle_EGAP_5(feature){
                 return {
                     radius: 2,
@@ -151,6 +208,17 @@
                     fillOpacity: 0.7   
                 }
             };
+
+            function pointStyle_EGAP_5_pr(feature){
+                return {
+                    radius: 2,
+                    fillColor: "white",
+                    color: "red",
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };            
             
             function pointStyle_ULEAD_5(feature){
                 return {
@@ -184,17 +252,39 @@
                     fillOpacity: 0.7   
                 }
             };
+
+            function pointStyle_GIZ_5_pr(feature){
+                return {
+                    radius: 2,
+                    fillColor: "white",
+                    color: "orange",
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };            
             
             function pointStyle_eu_5(feature){
                 return {
                     radius: 2,
-                    fillColor: '#ffd700',
-                    color: '#ffd700',
+                    fillColor: '#fbff01',
+                    color: '#fbff01',
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7   
                 }
             };
+
+            function pointStyle_eu_5_pr(feature){
+                return {
+                    radius: 2,
+                    fillColor: 'white',
+                    color: '#fbff01',
+                    weight: 1,
+                    opacity: 0.6,
+                    fillOpacity: 0.7   
+                }
+            };            
             
             // ZOOOM 6
             function pointStyle_6(feature){
@@ -217,6 +307,17 @@
                     fillOpacity: 0.6   
                 }
             };
+
+            function pointStyle_EGAP_6_pr(feature){
+                return {
+                    radius: 3.5,
+                    fillColor: "white",
+                    color: '#7f0000',
+                    weight: 1.4,
+                    opacity: 0.6,
+                    fillOpacity: 0.6   
+                }
+            };            
             
             function pointStyle_ULEAD_6(feature){
                 return {
@@ -250,11 +351,22 @@
                     fillOpacity: 0.6   
                 }
             };
+
+            function pointStyle_GIZ_6_pr(feature){
+                return {
+                    radius: 3.5,
+                    fillColor: "white",
+                    color: "#7f5200",
+                    weight: 1.4,
+                    opacity: 0.6,
+                    fillOpacity: 0.6   
+                }
+            };            
             
             function pointStyle_eu_6(feature){
                 return {
                     radius: 3.5,
-                    fillColor: '#ffd700',
+                    fillColor: '#fbff01',
                     color: '#7f6b00',
                     weight: 1.4,
                     opacity: 0.6,
@@ -262,9 +374,26 @@
                 }
             };
 
+            function pointStyle_eu_6_pr(feature){
+                return {
+                    radius: 3.5,
+                    fillColor: 'white',
+                    color: '#7f6b00',
+                    weight: 1.4,
+                    opacity: 0.6,
+                    fillOpacity: 0.6   
+                }
+            };            
+
             // ZOOM 7
             var egap_7_style = L.icon({
                 iconUrl: 'data/egap_7.svg',
+                iconSize: [16, 16],
+                iconAnchor: [8,8]
+            });
+
+            var egap_7_pr_style = L.icon({
+                iconUrl: 'data/egap_pr_7.svg',
                 iconSize: [16, 16],
                 iconAnchor: [8,8]
             });
@@ -287,11 +416,23 @@
                 iconAnchor: [8,8]
             });
 
+            var giz_7_pr_style = L.icon({
+                iconUrl: 'data/giz_pr_7.svg',
+                iconSize: [16, 16],
+                iconAnchor: [8,8]
+            });            
+
             var euproject_7_style = L.icon({
                 iconUrl: 'data/euproject_7.svg',
                 iconSize: [16, 16],
                 iconAnchor: [8,8]
             });
+
+            var euproject_7_pr_style = L.icon({
+                iconUrl: 'data/euproject_pr_7.svg',
+                iconSize: [16, 16],
+                iconAnchor: [8,8]
+            });            
 
             var rest_7_style = L.icon({
                 iconUrl: 'data/rest_7.svg',
@@ -302,6 +443,12 @@
             // ZOOM 8
             var egap_8_style = L.icon({
                 iconUrl: 'data/egap_8.svg',
+                iconSize: [24, 24],
+                iconAnchor: [12,12]
+            });
+
+            var egap_8_pr_style = L.icon({
+                iconUrl: 'data/egap_pr_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });
@@ -324,8 +471,20 @@
                 iconAnchor: [12,12]
             });
 
+            var giz_8_pr_style = L.icon({
+                iconUrl: 'data/giz_pr_8.svg',
+                iconSize: [24, 24],
+                iconAnchor: [12,12]
+            });            
+
             var euproject_8_style = L.icon({
                 iconUrl: 'data/euproject_8.svg',
+                iconSize: [24, 24],
+                iconAnchor: [12,12]
+            });
+
+            var euproject_8_pr_style = L.icon({
+                iconUrl: 'data/euproject_pr_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });
@@ -334,7 +493,7 @@
                 iconUrl: 'data/rest_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
-            });
+            });          
 
             // GEOJSON LAYER WITH JQUERY
             $.getJSON("data/cnap_20.geojson", function(response){
@@ -352,6 +511,19 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
+                var rest_perm = new L.geoJson(response,{
+                style: pointStyle_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == null;
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                map.addLayer(rest_perm)
+
                 var egap_5 = new L.geoJson(response,{
                 style: pointStyle_EGAP_5,
                 filter: function(feature, layer){
@@ -363,6 +535,44 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var egap_perm = new L.geoJson(response,{
+                style: pointStyle_EGAP_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EGAP Program";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                map.addLayer(egap_perm)
+
+                var egap_5_pr = new L.geoJson(response,{
+                style: pointStyle_EGAP_5_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "egap_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var egap_pr_perm = new L.geoJson(response,{
+                style: pointStyle_EGAP_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "egap_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                map.addLayer(egap_pr_perm)
 
                 var ulead_5 = new L.geoJson(response,{
                 style: pointStyle_ULEAD_5,
@@ -376,6 +586,19 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
+                var ulead_perm = new L.geoJson(response,{
+                style: pointStyle_ULEAD_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
+                map.addLayer(ulead_perm)
+
                 var ulead_5_pr = new L.geoJson(response,{
                 style: pointStyle_ULEAD_5_pr,
                 filter: function(feature, layer){
@@ -387,6 +610,19 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var ulead_pr_perm = new L.geoJson(response,{
+                style: pointStyle_ULEAD_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "U-LEAD_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
+                map.addLayer(ulead_pr_perm)                
 
                 var giz_5 = new L.geoJson(response,{
                 style: pointStyle_GIZ_5,
@@ -400,6 +636,44 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
+                var giz_perm = new L.geoJson(response,{
+                style: pointStyle_GIZ_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "GIZ";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                map.addLayer(giz_perm)
+
+                var giz_5_pr = new L.geoJson(response,{
+                style: pointStyle_GIZ_5_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "giz_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var giz_pr_perm = new L.geoJson(response,{
+                style: pointStyle_GIZ_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "giz_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+                map.addLayer(giz_pr_perm)                
+
                 var euproject_5 = new L.geoJson(response,{
                 style: pointStyle_eu_5,
                 filter: function(feature, layer){
@@ -411,6 +685,44 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var euproject_perm = new L.geoJson(response,{
+                style: pointStyle_eu_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "EU Project";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    }); 
+                map.addLayer(euproject_perm)
+
+                var euproject_5_pr = new L.geoJson(response,{
+                style: pointStyle_eu_5_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "eu_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var euproject_pr_perm = new L.geoJson(response,{
+                style: pointStyle_eu_perm,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "eu_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    }); 
+                map.addLayer(euproject_pr_perm)                
 
                 var rest_6 = new L.geoJson(response,{
                 style: pointStyle_6,
@@ -435,6 +747,18 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var egap_6_pr = new L.geoJSON(response,{
+                style: pointStyle_EGAP_6_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "egap_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
                         
                 var ulead_6 = new L.geoJSON(response,{
                 style: pointStyle_ULEAD_6,
@@ -472,6 +796,18 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
+                var giz_6_pr = new L.geoJSON(response,{
+                style: pointStyle_GIZ_6_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "giz_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
+
                 var euproject_6 = new L.geoJSON(response,{
                 style: pointStyle_eu_6,
                 filter: function(feature, layer){
@@ -483,6 +819,18 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var euproject_6_pr = new L.geoJSON(response,{
+                style: pointStyle_eu_6_pr,
+                filter: function(feature, layer){
+                    return feature.properties.donor == "eu_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    var circle =  L.circleMarker(latlng,pointStyle);
+                    return circle;
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
 
                 var rest_7 = new L.geoJSON(response,{
                 filter: function(feature, layer){
@@ -503,6 +851,16 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var egap_7_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "egap_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: egap_7_pr_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
                         
                 var ulead_7 = new L.geoJSON(response,{
                 filter: function(feature, layer){
@@ -534,6 +892,16 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
+                var giz_7_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "giz_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: giz_7_pr_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
                 var euproject_7 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == "EU Project";
@@ -543,6 +911,16 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var euproject_7_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "eu_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: euproject_7_pr_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
                 
                 var rest_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
@@ -560,6 +938,16 @@
                     },
                 pointToLayer: function (feature, latlng) {
                     return L.marker(latlng, {icon: egap_8_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
+                var egap_8_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "egap_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: egap_8_pr_style});
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
@@ -594,6 +982,16 @@
                 onEachFeature: onEachFeaturePointsPopup,
                     });
 
+                var giz_8_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "giz_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: giz_8_pr_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });
+
                 var euproject_8 = new L.geoJSON(response,{
                 filter: function(feature, layer){
                     return feature.properties.donor == "EU Project";
@@ -603,6 +1001,16 @@
                 },
                 onEachFeature: onEachFeaturePointsPopup,
                     });
+
+                var euproject_8_pr = new L.geoJSON(response,{
+                filter: function(feature, layer){
+                    return feature.properties.donor == "eu_pr";
+                    },
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: euproject_8_pr_style});
+                },
+                onEachFeature: onEachFeaturePointsPopup,
+                    });                
 
                 map.on('zoomend ', function(e) {
                 if ( map.getZoom() <= 5 && map.getZoom() < 6){ 
@@ -617,12 +1025,12 @@
                     };
                     if (map.hasLayer(egap)) {
                         map.removeLayer(egap);
-                        egap = egap_5;
+                        egap = L.layerGroup([egap_5, egap_5_pr]);
                         map.addLayer(egap);
                     }
                     else {
                         map.removeLayer(egap);
-                        egap = egap_5;
+                        egap = L.layerGroup([egap_5, egap_5_pr]);
                     };           
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
@@ -635,21 +1043,21 @@
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
-                        giz = giz_5;
+                        giz = L.layerGroup([giz_5, giz_5_pr]);
                         map.addLayer(giz);
                     }
                     else {
                         map.removeLayer(giz);
-                        giz = giz_5;
+                        giz = L.layerGroup([giz_5, giz_5_pr]);
                     };
                     if (map.hasLayer(euproject)) {
                         map.removeLayer(euproject);
-                        euproject = euproject_5;
+                        euproject = L.layerGroup([euproject_5, euproject_5_pr]);
                         map.addLayer(euproject);
                     }
                     else {
                         map.removeLayer(euproject);
-                        euproject = euproject_5;
+                        euproject = L.layerGroup([euproject_5, euproject_5_pr]);
                     };                    
                     map.addLayer(regionLayer);                   
                 }
@@ -665,12 +1073,12 @@
                     };
                     if (map.hasLayer(egap)) {
                         map.removeLayer(egap);
-                        egap = egap_6;
+                        egap = L.layerGroup([egap_6, egap_6_pr]);
                         map.addLayer(egap);
                     }
                     else {
                         map.removeLayer(egap);
-                        egap = egap_6;
+                        egap = L.layerGroup([egap_6, egap_6_pr]);
                     };                    
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
@@ -683,21 +1091,21 @@
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
-                        giz = giz_6;
+                        giz = L.layerGroup([giz_6, giz_6_pr]);
                         map.addLayer(giz);
                     }
                     else {
                         map.removeLayer(giz);
-                        giz = giz_6;
+                        giz = L.layerGroup([giz_6, giz_6_pr]);
                     };
                     if (map.hasLayer(euproject)) {
                         map.removeLayer(euproject);
-                        euproject = euproject_6;
+                        euproject = L.layerGroup([euproject_6, euproject_6_pr]);
                         map.addLayer(euproject);
                     }
                     else {
                         map.removeLayer(euproject);
-                        euproject = euproject_6;
+                        euproject = L.layerGroup([euproject_6, euproject_6_pr]);
                     };                                                 
                     map.addLayer(regionLayer);               
                 }
@@ -714,12 +1122,12 @@
                     }
                     if (map.hasLayer(egap)) {
                         map.removeLayer(egap);
-                        egap = egap_7;
+                        egap = L.layerGroup([egap_7, egap_7_pr]);
                         map.addLayer(egap);
                     }
                     else {
                         map.removeLayer(egap);
-                        egap = egap_7;
+                        egap = L.layerGroup([egap_7, egap_7_pr]);
                     };                    
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
@@ -732,21 +1140,21 @@
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
-                        giz = giz_7;
+                        giz = L.layerGroup([giz_7, giz_7_pr]);
                         map.addLayer(giz);
                     }
                     else {
                         map.removeLayer(giz);
-                        giz = giz_7;
+                        giz = L.layerGroup([giz_7, giz_7_pr]);
                     };
                     if (map.hasLayer(euproject)) {
                         map.removeLayer(euproject);
-                        euproject = euproject_7;
+                        euproject = L.layerGroup([euproject_7, euproject_7_pr]);
                         map.addLayer(euproject);
                     }
                     else {
                         map.removeLayer(euproject);
-                        euproject = euproject_7;
+                        euproject = L.layerGroup([euproject_7, euproject_7_pr]);
                     };                    
                 }
                 else if (map.getZoom() >= 8) {
@@ -762,12 +1170,12 @@
                     }
                     if (map.hasLayer(egap)) {
                         map.removeLayer(egap);
-                        egap = egap_8;
+                        egap = L.layerGroup([egap_8, egap_8_pr]);
                         map.addLayer(egap);
                     }
                     else {
                         map.removeLayer(egap);
-                        egap = egap_8;
+                        egap = L.layerGroup([egap_8, egap_8_pr]);
                     };                    
                     if (map.hasLayer(ulead)) {
                         map.removeLayer(ulead);
@@ -780,21 +1188,21 @@
                     };
                     if (map.hasLayer(giz)) {
                         map.removeLayer(giz);
-                        giz = giz_8;
+                        giz = L.layerGroup([giz_8, giz_8_pr]);
                         map.addLayer(giz);
                     }
                     else {
                         map.removeLayer(giz);
-                        giz = giz_8;
+                        giz = L.layerGroup([giz_8, giz_8_pr]);
                     };
                     if (map.hasLayer(euproject)) {
                         map.removeLayer(euproject);
-                        euproject = euproject_8;
+                        euproject = L.layerGroup([euproject_8, euproject_8_pr]);
                         map.addLayer(euproject);
                     }
                     else {
                         map.removeLayer(euproject);
-                        euproject = euproject_8;
+                        euproject = L.layerGroup([euproject_8, euproject_8_pr]);
                     };                    
                 }              
                 });
@@ -811,9 +1219,9 @@
                 });
 
                 rest = rest_6;
-                euproject = euproject_6;
-                egap = egap_6;
-                giz = giz_6;
+                euproject = L.layerGroup([euproject_6, euproject_6_pr]);
+                egap = L.layerGroup([egap_6, egap_6_pr]);
+                giz = L.layerGroup([giz_6, giz_6_pr]);
                 ulead = L.layerGroup([ulead_6, ulead_6_pr]);
                 lz6 = L.layerGroup([rest, euproject, egap, giz, ulead]);
                 map.addLayer(lz6);
