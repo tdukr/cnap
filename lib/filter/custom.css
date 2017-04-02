@@ -178,7 +178,7 @@ input[type=checkbox] {
   opacity: 1;
 }
 #euproject:checked + label:before {
-  background: #ffdf32;
+  background: #fbff01;
   opacity: 1;
 }
 #rest:checked + label:before {
