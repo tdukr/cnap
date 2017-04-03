@@ -135,8 +135,8 @@
             function pointStyle_perm(feature){
                 return {
                     radius: 1,
-                    fillColor: "green",
-                    color: "green",
+                    fillColor: "orange",
+                    color: "orange",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7
@@ -157,8 +157,8 @@
             function pointStyle_ULEAD_perm(feature){
                 return {
                     radius: 1,
-                    fillColor: "blue",
-                    color: "blue",
+                    fillColor: "green",
+                    color: "green",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7   
@@ -168,8 +168,8 @@
             function pointStyle_GIZ_perm(feature){
                 return {
                     radius: 1,
-                    fillColor: "orange",
-                    color: "orange",
+                    fillColor: "blue",
+                    color: "blue",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7   
@@ -190,8 +190,8 @@
             function pointStyle(feature){
                 return {
                     radius: 2,
-                    fillColor: "green",
-                    color: "green",
+                    fillColor: "orange",
+                    color: "orange",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7
@@ -223,8 +223,8 @@
             function pointStyle_ULEAD_5(feature){
                 return {
                     radius: 2,
-                    fillColor: "blue",
-                    color: "blue",
+                    fillColor: "green",
+                    color: "green",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7   
@@ -235,7 +235,7 @@
                 return {
                     radius: 2,
                     fillColor: "white",
-                    color: "blue",
+                    color: "green",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7   
@@ -245,8 +245,8 @@
             function pointStyle_GIZ_5(feature){
                 return {
                     radius: 2,
-                    fillColor: "orange",
-                    color: "orange",
+                    fillColor: "blue",
+                    color: "blue",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7   
@@ -257,7 +257,7 @@
                 return {
                     radius: 2,
                     fillColor: "white",
-                    color: "orange",
+                    color: "blue",
                     weight: 1,
                     opacity: 0.6,
                     fillOpacity: 0.7   
@@ -287,7 +287,7 @@
             };            
             
             // ZOOOM 6
-            function pointStyle_6(feature){
+            function pointStyle_ULEAD_6(feature){
                 return {
                     radius: 3.5,
                     fillColor: "green",
@@ -297,6 +297,18 @@
                     fillOpacity: 0.6   
                 }
             };
+
+            function pointStyle_ULEAD_6_pr(feature){
+                return {
+                    radius: 3.5,
+                    fillColor: "white",
+                    color: "#004c00",
+                    weight: 1.4,
+                    opacity: 0.6,
+                    fillOpacity: 0.6   
+                }
+            }; 
+
             function pointStyle_EGAP_6(feature){
                 return {
                     radius: 3.5,
@@ -319,7 +331,7 @@
                 }
             };            
             
-            function pointStyle_ULEAD_6(feature){
+            function pointStyle_GIZ_6(feature){
                 return {
                     radius: 3.5,
                     fillColor: "blue",
@@ -330,7 +342,7 @@
                 }
             };
             
-            function pointStyle_ULEAD_6_pr(feature){
+            function pointStyle_GIZ_6_pr(feature){
                 return {
                     radius: 3.5,
                     fillColor: "white",
@@ -341,7 +353,7 @@
                 }
             };
 
-            function pointStyle_GIZ_6(feature){
+            function pointStyle_6(feature){
                 return {
                     radius: 3.5,
                     fillColor: "orange",
@@ -351,17 +363,7 @@
                     fillOpacity: 0.6   
                 }
             };
-
-            function pointStyle_GIZ_6_pr(feature){
-                return {
-                    radius: 3.5,
-                    fillColor: "white",
-                    color: "#7f5200",
-                    weight: 1.4,
-                    opacity: 0.6,
-                    fillOpacity: 0.6   
-                }
-            };            
+           
             
             function pointStyle_eu_6(feature){
                 return {
@@ -399,25 +401,25 @@
             });
 
             var ulead_7_style = L.icon({
-                iconUrl: 'data/ulead_7.svg',
+                iconUrl: 'data/rest_7.svg',
                 iconSize: [16, 16],
                 iconAnchor: [8,8]
             });
 
             var ulead_7_pr_style = L.icon({
-                iconUrl: 'data/ulead_pr_7.svg',
+                iconUrl: 'data/rest_7_pr.svg',
                 iconSize: [16, 16],
                 iconAnchor: [8,8]
             });
 
             var giz_7_style = L.icon({
-                iconUrl: 'data/giz_7.svg',
+                iconUrl: 'data/ulead_7.svg',
                 iconSize: [16, 16],
                 iconAnchor: [8,8]
             });
 
             var giz_7_pr_style = L.icon({
-                iconUrl: 'data/giz_pr_7.svg',
+                iconUrl: 'data/ulead_pr_7.svg',
                 iconSize: [16, 16],
                 iconAnchor: [8,8]
             });            
@@ -435,7 +437,7 @@
             });            
 
             var rest_7_style = L.icon({
-                iconUrl: 'data/rest_7.svg',
+                iconUrl: 'data/giz_7.svg',
                 iconSize: [16, 16],
                 iconAnchor: [8,8]
             });                                    
@@ -454,25 +456,25 @@
             });
 
             var ulead_8_style = L.icon({
-                iconUrl: 'data/ulead_8.svg',
+                iconUrl: 'data/rest_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });
 
             var ulead_8_pr_style = L.icon({
-                iconUrl: 'data/ulead_pr_8.svg',
+                iconUrl: 'data/rest_8_pr.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });
 
             var giz_8_style = L.icon({
-                iconUrl: 'data/giz_8.svg',
+                iconUrl: 'data/ulead_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });
 
             var giz_8_pr_style = L.icon({
-                iconUrl: 'data/giz_pr_8.svg',
+                iconUrl: 'data/ulead_pr_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });            
@@ -490,7 +492,7 @@
             });
 
             var rest_8_style = L.icon({
-                iconUrl: 'data/rest_8.svg',
+                iconUrl: 'data/giz_8.svg',
                 iconSize: [24, 24],
                 iconAnchor: [12,12]
             });          
