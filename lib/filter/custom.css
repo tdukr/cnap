@@ -170,11 +170,11 @@ input[type=checkbox] {
   opacity: 1;
 }
 #ulead:checked + label:before {
-  background: #3232ff;
+  background: #329932;
   opacity: 1;
 }
 #giz:checked + label:before {
-  background: #ffb732;
+  background: #3232ff;
   opacity: 1;
 }
 #euproject:checked + label:before {
@@ -182,7 +182,7 @@ input[type=checkbox] {
   opacity: 1;
 }
 #rest:checked + label:before {
-  background: #329932;
+  background: #ffb732;
   opacity: 1;
 }
 /* Сдвигаем переключатель чекбокса, когда он включен. */
