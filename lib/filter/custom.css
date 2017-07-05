@@ -192,3 +192,14 @@ input[type=checkbox] {
 /* Показываем получение фокуса. */
 .squaredTwo:focus + label:before {
   box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}
+div.image {
+  position: absolute;
+  content:url(logoblock.png);
+  height: 50px;
+  z-index: 1000;
+  bottom: 24px;
+  right: 0px;
+  background: white; background: rgba(255,255,255,0.8); 
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);/* border-radius: 5px;*/
+}

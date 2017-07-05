@@ -86,8 +86,7 @@
             //basemap layer
             L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibXlrb2xhLWtvenlyIiwiYSI6ImNpemNzeHBhaDAwNHkycW8wZm40OHptdTMifQ.6q-bTx4fwm9Ch-knzk1i3Q', {
                 maxZoom: 18,
-                attribution: '<a href="http://cnap.in.ua/">Портал реформи адміністративних послуг</a> | ' + 
-                    '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors | ' +
+                attribution: '<a&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors | ' +
                     'Imagery © <a href="http://mapbox.com">Mapbox</a>',
                 id: 'mapbox.streets'
             }).addTo(map);
@@ -1246,5 +1245,6 @@
             map.setMaxBounds(bounds);
             map.setMinZoom(5);
         </script>
+        <a target="_blank" href="http://cnap.in.ua"><div class="image"></div></a>
     </body>
 </html>
